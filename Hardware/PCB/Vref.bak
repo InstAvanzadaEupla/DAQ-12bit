@@ -1,0 +1,171 @@
+EESchema Schematic File Version 2
+LIBS:shield_arduino
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:arduino_shieldsNCL
+LIBS:ADQ-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCP1541 U3
+U 1 1 5A96EE58
+P 5650 3950
+F 0 "U3" H 5650 3950 60  0000 C CNN
+F 1 "MCP1541" H 5650 4050 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5650 3950 60  0001 C CNN
+F 3 "" H 5650 3950 60  0001 C CNN
+	1    5650 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3500 5800 3500
+Wire Wire Line
+	5800 3500 5800 3550
+$Comp
+L GND #PWR021
+U 1 1 5A96EEFC
+P 5800 3550
+F 0 "#PWR021" H 5800 3300 50  0001 C CNN
+F 1 "GND" H 5800 3400 50  0000 C CNN
+F 2 "" H 5800 3550 50  0001 C CNN
+F 3 "" H 5800 3550 50  0001 C CNN
+	1    5800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C15
+U 1 1 5A96EF28
+P 6100 4450
+F 0 "C15" H 6125 4550 50  0000 L CNN
+F 1 "10uF" H 6125 4350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6138 4300 50  0001 C CNN
+F 3 "" H 6100 4450 50  0001 C CNN
+	1    6100 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C14
+U 1 1 5A96EF4D
+P 5250 4450
+F 0 "C14" H 5275 4550 50  0000 L CNN
+F 1 "0.1uF" H 5275 4350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5288 4300 50  0001 C CNN
+F 3 "" H 5250 4450 50  0001 C CNN
+	1    5250 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C13
+U 1 1 5A96EF6E
+P 5000 4450
+F 0 "C13" H 5025 4550 50  0000 L CNN
+F 1 "10uF" H 5025 4350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5038 4300 50  0001 C CNN
+F 3 "" H 5000 4450 50  0001 C CNN
+	1    5000 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR022
+U 1 1 5A96EF98
+P 6100 4600
+F 0 "#PWR022" H 6100 4350 50  0001 C CNN
+F 1 "GND" H 6100 4450 50  0000 C CNN
+F 2 "" H 6100 4600 50  0001 C CNN
+F 3 "" H 6100 4600 50  0001 C CNN
+	1    6100 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR023
+U 1 1 5A96EFAF
+P 5250 4600
+F 0 "#PWR023" H 5250 4350 50  0001 C CNN
+F 1 "GND" H 5250 4450 50  0000 C CNN
+F 2 "" H 5250 4600 50  0001 C CNN
+F 3 "" H 5250 4600 50  0001 C CNN
+	1    5250 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR024
+U 1 1 5A96EFC6
+P 5000 4600
+F 0 "#PWR024" H 5000 4350 50  0001 C CNN
+F 1 "GND" H 5000 4450 50  0000 C CNN
+F 2 "" H 5000 4600 50  0001 C CNN
+F 3 "" H 5000 4600 50  0001 C CNN
+	1    5000 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4300 5000 4300
+Connection ~ 5250 4300
+Wire Wire Line
+	5800 4300 6100 4300
+Wire Wire Line
+	5800 4300 5800 4650
+Connection ~ 5800 4300
+Connection ~ 5500 4300
+Wire Wire Line
+	5500 4300 5500 4650
+Wire Wire Line
+	5500 4650 5600 4650
+Wire Wire Line
+	5600 4650 5600 4600
+$Comp
+L +5V #PWR025
+U 1 1 5A96F01A
+P 5600 4600
+F 0 "#PWR025" H 5600 4450 50  0001 C CNN
+F 1 "+5V" H 5600 4740 50  0000 C CNN
+F 2 "" H 5600 4600 50  0001 C CNN
+F 3 "" H 5600 4600 50  0001 C CNN
+	1    5600 4600
+	1    0    0    -1  
+$EndComp
+Text HLabel 5800 4650 3    60   Output ~ 0
+Vref
+$EndSCHEMATC
